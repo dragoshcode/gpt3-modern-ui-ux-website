@@ -1,1 +1,33 @@
 @use '../../scss/variables' as v;
+
+.gpt3__navbar {
+  padding: 3rem;
+  justify-content: space-between;
+
+  &-links {
+    gap: 2rem;
+    img {
+      width: 4rem;
+    }
+    a {
+      color: white;
+    }
+  }
+
+  &-btns {
+    gap: 2rem;
+    .sign-in {
+      color: white;
+      font-family: 'Manrope', sans-serif;
+      font-size: 1rem;
+    }
+    .sign-up {
+      color: white;
+      font-family: 'Manrope', sans-serif;
+      font-size: 1rem;
+      background-color: v.$color-subtext;
+      padding: 0.8rem 1.8rem;
+      border-radius: 0.5rem;
+    }
+  }
+}

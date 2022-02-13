@@ -1,7 +1,7 @@
 @use './variables' as v;
 
-body{
-    background-color: v.$color-bg;
+body {
+  background-color: v.$color-bg;
 }
 
 .gradient-bg {
@@ -65,12 +65,11 @@ body{
 }
 
 @media screen and (max-width: 550px) {
-    .section-padding {
-      padding: 4rem 2rem;
-    }
-  
-    .section-margin {
-      padding: 4rem 2rem;
-    }
+  .section-padding {
+    padding: 4rem 2rem;
   }
-  
+
+  .section-margin {
+    padding: 4rem 2rem;
+  }
+}
