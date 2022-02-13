@@ -124,27 +124,25 @@
   }
 }
 
-
 @media only screen and (min-width: 1750px) {
   .header {
     padding-inline: 10rem;
-    &__data{
-        h1{
-            font-size: 3.3rem;
+    &__data {
+      h1 {
+        font-size: 3.3rem;
+      }
+      &-input {
+        input {
+          font-size: 1.1rem;
         }
-        &-input{
-            input{
-                font-size: 1.1rem;
-            }
-            button{
-                font-size: 1.05rem;
-
-            }
+        button {
+          font-size: 1.05rem;
         }
+      }
     }
 
-    &__image img{
-        max-width: 40rem;
+    &__image img {
+      max-width: 40rem;
     }
   }
 }
