@@ -16,6 +16,7 @@
       display: none;
       a {
         color: white;
+        font-weight: 600;
       }
     }
   }
@@ -28,6 +29,7 @@
       color: white;
       font-family: 'Manrope', sans-serif;
       font-size: 1rem;
+      font-weight: 600;
     }
     .sign-up {
       color: white;
@@ -36,6 +38,7 @@
       background-color: v.$color-subtext;
       padding: 0.8rem 1.8rem;
       border-radius: 0.5rem;
+      font-weight: 600;
     }
   }
 
@@ -59,12 +62,14 @@
       border-radius: 1rem;
       a {
         color: white;
+        font-weight: 600;
       }
       button {
         display: block;
         color: white;
         font-size: 1rem;
         font-family: 'Manrope', sans-serif;
+        font-weight: 600;
       }
       .sign-in {
         margin-top: 0.5rem;
