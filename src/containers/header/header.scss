@@ -1,1 +1,46 @@
 @use '../../scss/variables' as v;
+
+.header {
+  grid-template-rows: 1fr 1fr;
+  margin-top: 3rem;
+  gap: 4rem;
+
+  &__data {
+    gap: 2rem;
+
+    p {
+      color: white;
+      opacity: 0.6;
+    }
+
+    &-input {
+      input {
+        background-color: v.$color-blog;
+        color: white;
+        opacity: 0.6;
+        font-family: 'Manrope', sans-serif;
+        padding: 0.6rem 0.8rem;
+        width: 60%;
+        border-radius: 0.3rem 0 0 0.3rem;
+      }
+      button {
+        background-color: v.$color-subtext;
+        color: white;
+        padding: 0.6rem 0.8rem;
+        border-radius: 0 0.3rem 0.3rem 0;
+        width: 40%;
+        font-family: 'Manrope', sans-serif;
+        font-size: .85rem;
+      }
+    }
+    &-users{
+        margin-top: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        p{
+            font-size: .8rem;
+        }
+    }
+  }
+}

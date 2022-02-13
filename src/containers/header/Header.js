@@ -6,9 +6,9 @@ import ai from '../../assets/ai.png';
 
 function Header() {
   return (
-    <div className='header grid'>
-      <div className='header__data'>
-        <h1>Let’s Build Something amazing with GPT-3 OpenAI</h1>
+    <div className='header section-padding grid'>
+      <div className='header__data flex-col'>
+        <h1 className='gradient-text'>Let’s Build Something amazing with GPT-3 OpenAI</h1>
         <p>
           Yet bed any for travelling assistance indulgence unpleasing. Not
           thoughts all exercise blessing. Indulgence way everything joy

@@ -1,4 +1,7 @@
+@use './variables' as v;
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 
 *,
 *::after,
@@ -17,6 +20,8 @@ html {
 body {
   min-height: 100vh;
   width: 100%;
+  background-color: v.$color-bg;
+
 }
 
 button{
@@ -31,4 +36,9 @@ a{
 
 img{
   max-width: 100%;
+}
+
+input{
+  background: none;
+  border: none;
 }
