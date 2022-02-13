@@ -1,10 +1,10 @@
 import React from 'react'
 import './whatGPT3.scss'
 import '../../scss/_utils.scss'
-function whatGPT3() {
+function WhatGPT3() {
   return (
     <div>whatGPT3</div>
   )
 }
 
-export default whatGPT3
+export default WhatGPT3
