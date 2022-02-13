@@ -2,20 +2,28 @@
 
 .gpt3__navbar {
   padding: 3rem;
-  justify-content: space-between;
 
   &-links {
     gap: 2rem;
-    img {
-      width: 4rem;
+    flex: 1;
+    &-logo {
+      img {
+        width: 4rem;
+      }
     }
-    a {
-      color: white;
+    &-menu {
+      gap: 2rem;
+      display: none;
+      a {
+        color: white;
+      }
     }
   }
 
   &-btns {
     gap: 2rem;
+    margin-right: 1.65rem;
+    display: none;
     .sign-in {
       color: white;
       font-family: 'Manrope', sans-serif;
@@ -28,6 +36,68 @@
       background-color: v.$color-subtext;
       padding: 0.8rem 1.8rem;
       border-radius: 0.5rem;
+    }
+  }
+
+  &-menu {
+    position: relative;
+    svg {
+      position: relative;
+      cursor: pointer;
+    }
+    &-container {
+      background-color: v.$color-footer;
+      position: absolute;
+      top: 3rem;
+      right: 0.2rem;
+      text-align: right;
+      justify-content: center;
+      align-items: end;
+      gap: 1rem;
+      padding: 1.5rem 1.5rem 1.5rem 0;
+      width: 11rem;
+      border-radius: 1rem;
+      a {
+        color: white;
+      }
+      button {
+        display: block;
+        color: white;
+        font-size: 1rem;
+        font-family: 'Manrope', sans-serif;
+      }
+      .sign-in {
+        margin-top: 0.5rem;
+      }
+      .sign-up {
+        background-color: v.$color-subtext;
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .gpt3__navbar-btns {
+    display: flex;
+  }
+  .gpt3__navbar-menu-container {
+    top: 4.5rem;
+    right: 0.5rem;
+    button {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .gpt3__navbar {
+    &-links-menu {
+      display: flex;
+    }
+    &-menu {
+      display: none;
     }
   }
 }
