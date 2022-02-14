@@ -1,4 +1,4 @@
-import { Brand, CTA,Navbar } from './components'
+import { Brand, CTA, Navbar } from './components'
 import { Blog, Features, Footer, Header, Possibility, WhatGPT3 } from './containers' 
 import './scss/_reset.scss'
 

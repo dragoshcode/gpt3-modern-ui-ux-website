@@ -7,13 +7,27 @@ import '../../scss/_utils.scss';
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
+  const handleCollapse = () => {
+    setToggleMenu(false);
+  };
+
   const Menu = () => (
     <>
-      <a href='#home'>Home</a>
-      <a href='#wgpt3'>What is GPT?</a>
-      <a href='#possibility'>Open AI</a>
-      <a href='#features'>Case Studies</a>
-      <a href='#blog'>Library</a>
+      <a onClick={handleCollapse} href='#home'>
+        Home
+      </a>
+      <a onClick={handleCollapse} href='#wgpt3'>
+        What is GPT?
+      </a>
+      <a onClick={handleCollapse} href='#possibility'>
+        Open AI
+      </a>
+      <a onClick={handleCollapse} href='#features'>
+        Case Studies
+      </a>
+      <a onClick={handleCollapse} href='#blog'>
+        Library
+      </a>
     </>
   );
 

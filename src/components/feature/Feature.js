@@ -1,7 +1,7 @@
 import React from 'react';
 import './feature.scss';
 import '../../scss/_utils.scss';
-function Feature({ text, title }) {
+function Feature({ text, title,}) {
   return (
     <>
       <h2 className='feature-title'>{title}</h2>
