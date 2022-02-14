@@ -1,1 +1,55 @@
 @use '../../scss/variables' as v;
+
+.cta {
+  margin-top: 6rem;
+  padding: 2rem;
+  width: 87%;
+  margin-inline: auto;
+  background-image: v.$gradient-text;
+  border-radius: 0.75rem;
+  color: white;
+  gap: 2rem;
+  &__details {
+    gap: 1rem;
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  button {
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    background-color: black;
+    width: 10rem;
+    margin-inline: auto;
+    padding: 0.8rem 0.4rem;
+    border-radius: 2rem;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .cta {
+    flex-direction: row;
+    align-items: center;
+    h3 {
+      font-size: 1.35rem;
+    }
+    button {
+      height: 3rem;
+      margin-inline: 0;
+      margin-left: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 1360px) {
+  .cta {
+    color: black;
+    padding: 3rem;
+    width: 84%;
+    button{
+        font-size: .9rem;
+    padding: 1rem;
+
+    }
+  }
+}
