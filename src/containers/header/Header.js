@@ -6,7 +6,7 @@ import ai from '../../assets/ai.png';
 
 function Header() {
   return (
-    <div className='header section-padding grid'>
+    <div className='header section-padding grid' id='home'>
       <div className='header__data flex-col'>
         <h1 className='gradient-text'>Let’s Build Something amazing with GPT-3 OpenAI</h1>
         <p>
