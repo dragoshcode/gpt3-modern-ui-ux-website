@@ -1,1 +1,79 @@
 @use '../../scss/variables' as v;
+
+.features {
+  margin-top: 6rem;
+  padding-inline: 2rem;
+  gap: 4rem;
+
+  &__title {
+    gap: 1.75rem;
+    align-items: start;
+    button {
+      font-family: 'Manrope', sans-serif;
+      color: v.$color-subtext;
+    }
+  }
+
+  &__details {
+    gap: 4rem;
+    &-card {
+      justify-content: space-between;
+      gap: 2rem;
+      h2 {
+        font-size: 1rem;
+        flex: 1;
+      }
+      p {
+        font-size: 0.8rem;
+        flex: 1;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .features__title h2 {
+    font-size: 1.9rem;
+  }
+  .features__details-card h2 {
+    font-size: 1.275rem;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .features {
+    padding-inline: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1360px) {
+  .features__title {
+    h2 {
+      font-size: 2.7rem;
+    }
+    button {
+      font-size: 1.095rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .features {
+    margin-top: 10rem;
+    padding-inline: 8rem;
+    &__details {
+      &-card {
+        h2 {
+          font-size: 1.45rem;
+        }
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    &__title {
+      gap: 2.75rem;
+    }
+  }
+}

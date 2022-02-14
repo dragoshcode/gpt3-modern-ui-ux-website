@@ -29,16 +29,16 @@ function Features() {
 
   return (
     <div className='features grid'>
-      <div className='features__title'>
-        <h2>
+      <div className='features__title flex-col'>
+        <h2 className='gradient-text'>
           The Future is Now and You Just Need To Realize It. Step into Future
           Today Make it Happen.
         </h2>
         <button>Request Early Access to Get Started</button>
       </div>
-      <div className='features__details'>
+      <div className='features__details flex-col'>
         {featuresDetails.map((item) => (
-          <div className='features__details-card' key={item.id}>
+          <div className='features__details-card flex' key={item.id}>
             <Feature title={item.title} text={item.text} />
           </div>
         ))}
