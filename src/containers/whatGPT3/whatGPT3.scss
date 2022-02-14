@@ -1,1 +1,35 @@
 @use '../../scss/variables' as v;
+
+.wgpt3 {
+  background: rgb(4, 44, 84);
+  background: linear-gradient(
+    129deg,
+    rgba(4, 44, 84, 1) 76%,
+    rgba(64, 128, 191, 1) 100%
+  );
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 87%;
+  margin-inline: auto;
+  margin-top: 10rem;
+  gap: 3rem;
+
+  &__title {
+    gap: 1.25rem;
+  }
+
+  &__cta {
+    gap: 1.25rem;
+    button {
+      font-family: 'Manrope', sans-serif;
+    }
+  }
+
+  &__features {
+    gap: 3.25rem;
+
+    &-card {
+      gap: 1.25rem;
+    }
+  }
+}

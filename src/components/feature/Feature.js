@@ -4,9 +4,8 @@ import '../../scss/_utils.scss';
 function Feature({ text, title }) {
   return (
     <>
-      {/* and also make h2:before */}
-      <h2>{title}</h2>
-      <p>{text}</p>
+      <h2 className='feature-title'>{title}</h2>
+      <p className='feature-text'>{text}</p>
     </>
   );
 }
