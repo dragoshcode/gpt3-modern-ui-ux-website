@@ -1,1 +1,51 @@
 @use '../../scss/variables' as v;
+
+.blog-wrapper {
+  margin-top: 6rem;
+  width: 87%;
+  margin-inline: auto;
+
+  .blog {
+    margin-top: 4rem;
+    gap: 2.5rem;
+
+    &__card {
+      background-color: v.$color-blog;
+    }
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .blog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .blog-wrapper h2:first-child {
+    font-size: 2.35rem;
+  }
+  .blog {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      'tunnel human chain'
+      'tunnel binary bang';
+    
+    .tunnel {
+      grid-area: tunnel;
+    }
+    .bang {
+      grid-area: bang;
+    }
+    .binary {
+      grid-area: binary;
+    }
+    .chain {
+      grid-area: chain;
+    }
+    .human {
+      grid-area: human;
+    }
+  }
+}

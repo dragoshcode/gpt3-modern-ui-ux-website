@@ -1,2 +1,53 @@
 @use '../../scss/variables' as v;
 
+.blog__card {
+  img {
+    background-color: v.$color-bg;
+  }
+}
+
+.blog__card-content {
+  padding: 1rem;
+  color: white;
+  gap: 5rem;
+  p {
+    font-size: 0.7rem;
+  }
+  h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  a {
+    font-size: 0.7rem;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .blog__card-content h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .span-two {
+    .blog__card-content {
+      gap: 28.5rem;
+    }
+  }
+  .blog__card-content {
+    padding: 2.3rem;
+    gap: 4rem;
+    &-description h2 {
+      font-size: 1.85rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1880px) {
+  .span-two {
+    .blog__card-content {
+      gap: 27.6rem;
+    }
+  }
+}
