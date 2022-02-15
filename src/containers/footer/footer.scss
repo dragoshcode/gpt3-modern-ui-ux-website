@@ -1,1 +1,64 @@
 @use '../../scss/variables' as v;
+
+.footer-container {
+  background-color: v.$color-footer;
+  margin-top: 7rem;
+  padding: 5rem 2rem;
+  color: white;
+  .footer {
+    gap: 3rem;
+    &__logo {
+      gap: 1rem;
+      img {
+        width: 7rem;
+      }
+    }
+    &__links {
+      gap: 1.75rem;
+      &-container {
+        gap: 1rem;
+        a {
+          color: white;
+        }
+      }
+    }
+
+    &__company {
+      gap: 1.75rem;
+      &-container {
+        gap: 1rem;
+        a {
+          color: white;
+        }
+      }
+    }
+
+    &__followup {
+      gap: 1.75rem;
+      &-container {
+        gap: 1rem;
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 5rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1360px) {
+  .footer-container {
+    padding: 7rem 5rem;
+  }
+
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
